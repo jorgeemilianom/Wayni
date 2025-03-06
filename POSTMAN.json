@@ -22,9 +22,9 @@
 					]
 				},
 				"url": {
-					"raw": "{{HOST}}/api/importar",
+					"raw": "{{URL_PROD}}/api/importar",
 					"host": [
-						"{{HOST}}"
+						"{{URL_PROD}}"
 					],
 					"path": [
 						"api",
@@ -103,9 +103,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/api/deudores",
+					"raw": "{{URL_PROD}}/api/deudores",
 					"host": [
-						"{{HOST}}"
+						"{{URL_PROD}}"
 					],
 					"path": [
 						"api",
@@ -174,9 +174,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{HOST}}/api/entidades",
+					"raw": "{{URL_PROD}}/api/entidades",
 					"host": [
-						"{{HOST}}"
+						"{{URL_PROD}}"
 					],
 					"path": [
 						"api",
@@ -316,7 +316,12 @@
 	],
 	"variable": [
 		{
-			"key": "HOST",
+			"key": "URL_PROD",
+			"value": "https://wayni-challenge.gesprender.cloud",
+			"type": "string"
+		},
+		{
+			"key": "URL_LOCAL",
 			"value": "http://localhost:3030",
 			"type": "string"
 		}
