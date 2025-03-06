@@ -35,11 +35,16 @@ El proyecto fue armado para poder levantarlo con docke y ser autosuficiente.
 docker compose up -d
 ```
 
+## 🛠 Tecnologías utilizadas
+
+* **Node.js** + **Express** (API REST)
+* **MongoDB** + **Mongoose** (Base de datos)
+
 ## 📂 Endpoints disponibles
 
-Usar el archivo POSTMAN.json para abrir la colección de endpoints configurada.
+Usar el archivo POSTMAN.json para abrir la colección de endpoints configurada. 
 
-Tambien puede usarse la variable URL_PROD para apuntar a la API productiva del proyecto.
+Por defecto, la colección apunto al entorno productivo de la API (`https://wayni-challenge.gesprender.cloud`). Para consumir la APP en entorno de desarrollo, cambia "URL_PROD" por "URL_LOCAL"
 
 ### 1️⃣ **Subir archivo TXT**
 
@@ -53,19 +58,19 @@ Tambien puede usarse la variable URL_PROD para apuntar a la API productiva del p
 
 **GET** `/api/entidades`
 
+## ✅Testing in Prod
+
+Para testear en prod, podes usar la siguiente URL:
+
+`https://wayni-challenge.gesprender.cloud`
+
 
 ## 🔃Gitflow
 
 master	-> ticket_branch	-> dev	-> testing		-> master
-
 
 ## 🆙Deploy
 
 CI/CD Implementado.
 
 Debe pasar por el flujo normal establecido en el gitflow. Una vez mergeado a master, correrá el Github Action que hará el deploy en el servidor.
-
-## 🛠 Tecnologías utilizadas
-
-* **Node.js** + **Express** (API REST)
-* **MongoDB** + **Mongoose** (Base de datos)
